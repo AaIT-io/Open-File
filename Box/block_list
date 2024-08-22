@@ -1,6 +1,9 @@
 #!/bin/bash
 
 
+iptables -F
+
+
 iptables -A OUTPUT -m string --string "x.com" --algo bm --to 65535 -j REJECT
 iptables -A OUTPUT -m string --string "google." --algo bm --to 65535 -j REJECT
 iptables -A OUTPUT -m string --string "youtube." --algo bm --to 65535 -j REJECT
