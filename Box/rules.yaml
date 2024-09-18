@@ -1,0 +1,278 @@
+########
+#### 通用
+########
+
+
+- action: block
+  expr: string(tls?.req?.sni) contains ".cn"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "google."
+
+- action: block
+  expr: string(tls?.req?.sni) contains "blogspot.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "duckduckgo.com"
+
+
+########
+#### 轮子
+########
+
+
+- action: block
+  expr: string(tls?.req?.sni) contains "falundafa.org"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "faluninfo.net"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "minghui.org"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "epochtimes.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "theepochtimes.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "ntdtv.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "soundofhope.org"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "renminbao.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "secretchina.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "shenyun.com"
+
+
+########
+#### 反华
+########
+
+
+- action: block
+  expr: string(tls?.req?.sni) contains "bannedbook.org"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "minzhuzhongguo.org"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "chinahrd.net"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "wqw2010.org"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "chinaworker.info"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "hklib.org"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "rfa.org"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "radiofreeasia.org"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "canyu.org"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "easternlight.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "dmzj.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "pincong.rocks"
+
+
+########
+#### 社交
+########
+
+
+- action: block
+  expr: string(tls?.req?.sni) contains "x.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "facebook.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "twitter.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "instagram.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "telegram.org"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "youtube.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "whatsapp.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "tumblr.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "twitch.tv"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "pinterest.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "snapchat.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "reddit.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "discord.com"
+
+
+########
+#### 新闻
+########
+
+
+- action: block
+  expr: string(tls?.req?.sni) contains "bbc.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "bbc.co.uk"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "nytimes.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "theguardian.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "independent.co.uk"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "spiegel.de"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "rferl.org"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "voanews.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "lemonde.fr"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "france24.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "dw.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "reuters.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "bloomberg.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "aljazeera.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "ft.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "hk01.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "tibetanreview.net"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "taipeitimes.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "tibet.net"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "freetibet.org"
+
+
+########
+#### 色情
+########
+
+
+- action: block
+  expr: string(tls?.req?.sni) contains "porn"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "fc2.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "t66y.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "pornhub.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "xvideos.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "xhamster.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "redtube.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "youporn.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "tube8.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "xnxx.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "youjizz.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "spankbang.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "drtuber.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "hardsextube.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "porn.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "beeg.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "4tube.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "tnaflix.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "sex.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "babes.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "javhub.net"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "shesfreaky.com"
+
