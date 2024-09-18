@@ -136,6 +136,9 @@
   expr: string(tls?.req?.sni) contains "x.com"
 
 - action: block
+  expr: string(tls?.req?.sni) contains "twimg.com"
+
+- action: block
   expr: string(tls?.req?.sni) contains "facebook.com"
 
 - action: block
