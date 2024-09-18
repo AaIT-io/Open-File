@@ -1,6 +1,6 @@
-########
+################
 #### 通用
-########
+################
 
 
 - action: block
@@ -16,9 +16,42 @@
   expr: string(tls?.req?.sni) contains "duckduckgo.com"
 
 
-########
+################
+#### Telegram
+################
+
+
+- action: block
+  expr: cidr(string(ip.dst), "91.108.56.0/22")
+  
+- action: block
+  expr: cidr(string(ip.dst), "91.108.4.0/22")
+  
+- action: block
+  expr: cidr(string(ip.dst), "91.108.8.0/22")
+  
+- action: block
+  expr: cidr(string(ip.dst), "91.108.16.0/22")
+  
+- action: block
+  expr: cidr(string(ip.dst), "91.108.12.0/22")
+  
+- action: block
+  expr: cidr(string(ip.dst), "149.154.160.0/20")
+  
+- action: block
+  expr: cidr(string(ip.dst), "91.105.192.0/23")
+  
+- action: block
+  expr: cidr(string(ip.dst), "91.108.20.0/22")
+  
+- action: block
+  expr: cidr(string(ip.dst), "185.76.151.0/24")
+
+
+################
 #### 轮子
-########
+################
 
 
 - action: block
@@ -52,9 +85,9 @@
   expr: string(tls?.req?.sni) contains "shenyun.com"
 
 
-########
+################
 #### 反华
-########
+################
 
 
 - action: block
@@ -94,9 +127,9 @@
   expr: string(tls?.req?.sni) contains "pincong.rocks"
 
 
-########
+################
 #### 社交
-########
+################
 
 
 - action: block
@@ -139,9 +172,9 @@
   expr: string(tls?.req?.sni) contains "discord.com"
 
 
-########
+################
 #### 新闻
-########
+################
 
 
 - action: block
@@ -205,9 +238,9 @@
   expr: string(tls?.req?.sni) contains "freetibet.org"
 
 
-########
+################
 #### 色情
-########
+################
 
 
 - action: block
