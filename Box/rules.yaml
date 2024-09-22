@@ -2,10 +2,6 @@
 #### 通用
 ################
 
-
-- action: block
-  expr: string(tls?.req?.sni) contains ".cn"
-
 - action: block
   expr: string(tls?.req?.sni) contains "google."
 
