@@ -144,10 +144,25 @@
   expr: string(tls?.req?.sni) contains "instagram.com"
 
 - action: block
+  expr: string(tls?.req?.sni) contains "fbcdn.net"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "cdninstagram.com"
+
+- action: block
   expr: string(tls?.req?.sni) contains "telegram.org"
 
 - action: block
+  expr: string(tls?.req?.sni) contains "ytimg.com"
+
+- action: block
   expr: string(tls?.req?.sni) contains "youtube.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "googlevideo.com"
+
+- action: block
+  expr: string(tls?.req?.sni) contains "googleusercontent.com"
 
 - action: block
   expr: string(tls?.req?.sni) contains "whatsapp.com"
