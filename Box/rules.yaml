@@ -6,10 +6,10 @@
   expr: string(tls?.req?.sni) contains "google."
 
 - action: block
-  expr: string(tls?.req?.sni) contains "blogspot.com"
+  expr: string(tls?.req?.sni) endsWith "blogspot.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "duckduckgo.com"
+  expr: string(tls?.req?.sni) endsWith "duckduckgo.com"
 
 
 ################
@@ -51,34 +51,34 @@
 
 
 - action: block
-  expr: string(tls?.req?.sni) contains "falundafa.org"
+  expr: string(tls?.req?.sni) endsWith "falundafa.org"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "faluninfo.net"
+  expr: string(tls?.req?.sni) endsWith "faluninfo.net"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "minghui.org"
+  expr: string(tls?.req?.sni) endsWith "minghui.org"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "epochtimes.com"
+  expr: string(tls?.req?.sni) endsWith "epochtimes.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "theepochtimes.com"
+  expr: string(tls?.req?.sni) endsWith "theepochtimes.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "ntdtv.com"
+  expr: string(tls?.req?.sni) endsWith "ntdtv.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "soundofhope.org"
+  expr: string(tls?.req?.sni) endsWith "soundofhope.org"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "renminbao.com"
+  expr: string(tls?.req?.sni) endsWith "renminbao.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "secretchina.com"
+  expr: string(tls?.req?.sni) endsWith "secretchina.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "shenyun.com"
+  expr: string(tls?.req?.sni) endsWith "shenyun.com"
 
 
 ################
@@ -87,40 +87,40 @@
 
 
 - action: block
-  expr: string(tls?.req?.sni) contains "bannedbook.org"
+  expr: string(tls?.req?.sni) endsWith "bannedbook.org"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "minzhuzhongguo.org"
+  expr: string(tls?.req?.sni) endsWith "minzhuzhongguo.org"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "chinahrd.net"
+  expr: string(tls?.req?.sni) endsWith "chinahrd.net"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "wqw2010.org"
+  expr: string(tls?.req?.sni) endsWith "wqw2010.org"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "chinaworker.info"
+  expr: string(tls?.req?.sni) endsWith "chinaworker.info"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "hklib.org"
+  expr: string(tls?.req?.sni) endsWith "hklib.org"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "rfa.org"
+  expr: string(tls?.req?.sni) endsWith "rfa.org"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "radiofreeasia.org"
+  expr: string(tls?.req?.sni) endsWith "radiofreeasia.org"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "canyu.org"
+  expr: string(tls?.req?.sni) endsWith "canyu.org"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "easternlight.com"
+  expr: string(tls?.req?.sni) endsWith "easternlight.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "dmzj.com"
+  expr: string(tls?.req?.sni) endsWith "dmzj.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "pincong.rocks"
+  expr: string(tls?.req?.sni) endsWith "pincong.rocks"
 
 
 ################
@@ -129,61 +129,61 @@
 
 
 - action: block
-  expr: string(tls?.req?.sni) contains "x.com"
+  expr: string(tls?.req?.sni) == "x.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "twimg.com"
+  expr: string(tls?.req?.sni) endsWith "twimg.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "facebook.com"
+  expr: string(tls?.req?.sni) endsWith "facebook.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "twitter.com"
+  expr: string(tls?.req?.sni) endsWith "twitter.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "instagram.com"
+  expr: string(tls?.req?.sni) endsWith "instagram.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "fbcdn.net"
+  expr: string(tls?.req?.sni) endsWith "fbcdn.net"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "cdninstagram.com"
+  expr: string(tls?.req?.sni) endsWith "cdninstagram.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "telegram.org"
+  expr: string(tls?.req?.sni) endsWith "telegram.org"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "ytimg.com"
+  expr: string(tls?.req?.sni) endsWith "ytimg.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "youtube.com"
+  expr: string(tls?.req?.sni) endsWith "youtube.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "googlevideo.com"
+  expr: string(tls?.req?.sni) endsWith "googlevideo.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "googleusercontent.com"
+  expr: string(tls?.req?.sni) endsWith "googleusercontent.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "whatsapp.com"
+  expr: string(tls?.req?.sni) endsWith "whatsapp.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "tumblr.com"
+  expr: string(tls?.req?.sni) endsWith "tumblr.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "twitch.tv"
+  expr: string(tls?.req?.sni) endsWith "twitch.tv"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "pinterest.com"
+  expr: string(tls?.req?.sni) endsWith "pinterest.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "snapchat.com"
+  expr: string(tls?.req?.sni) endsWith "snapchat.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "reddit.com"
+  expr: string(tls?.req?.sni) endsWith "reddit.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "discord.com"
+  expr: string(tls?.req?.sni) endsWith "discord.com"
 
 
 ################
@@ -192,64 +192,64 @@
 
 
 - action: block
-  expr: string(tls?.req?.sni) contains "bbc.com"
+  expr: string(tls?.req?.sni) endsWith "bbc.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "bbc.co.uk"
+  expr: string(tls?.req?.sni) endsWith "bbc.co.uk"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "nytimes.com"
+  expr: string(tls?.req?.sni) endsWith "nytimes.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "theguardian.com"
+  expr: string(tls?.req?.sni) endsWith "theguardian.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "independent.co.uk"
+  expr: string(tls?.req?.sni) endsWith "independent.co.uk"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "spiegel.de"
+  expr: string(tls?.req?.sni) endsWith "spiegel.de"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "rferl.org"
+  expr: string(tls?.req?.sni) endsWith "rferl.org"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "voanews.com"
+  expr: string(tls?.req?.sni) endsWith "voanews.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "lemonde.fr"
+  expr: string(tls?.req?.sni) endsWith "lemonde.fr"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "france24.com"
+  expr: string(tls?.req?.sni) endsWith "france24.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "dw.com"
+  expr: string(tls?.req?.sni) endsWith "dw.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "reuters.com"
+  expr: string(tls?.req?.sni) endsWith "reuters.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "bloomberg.com"
+  expr: string(tls?.req?.sni) endsWith "bloomberg.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "aljazeera.com"
+  expr: string(tls?.req?.sni) endsWith "aljazeera.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "ft.com"
+  expr: string(tls?.req?.sni) endsWith "ft.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "hk01.com"
+  expr: string(tls?.req?.sni) endsWith "hk01.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "tibetanreview.net"
+  expr: string(tls?.req?.sni) endsWith "tibetanreview.net"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "taipeitimes.com"
+  expr: string(tls?.req?.sni) endsWith "taipeitimes.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "tibet.net"
+  expr: string(tls?.req?.sni) endsWith "tibet.net"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "freetibet.org"
+  expr: string(tls?.req?.sni) endsWith "freetibet.org"
 
 
 ################
@@ -258,65 +258,68 @@
 
 
 - action: block
-  expr: string(tls?.req?.sni) contains "porn"
+  expr: string(tls?.req?.sni) endsWith "porn"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "fc2.com"
+  expr: string(tls?.req?.sni) endsWith "fc2.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "t66y.com"
+  expr: string(tls?.req?.sni) endsWith "t66y.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "pornhub.com"
+  expr: string(tls?.req?.sni) endsWith "pornhub.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "xvideos.com"
+  expr: string(tls?.req?.sni) endsWith "xvideos.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "xhamster.com"
+  expr: string(tls?.req?.sni) endsWith "xhamster.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "redtube.com"
+  expr: string(tls?.req?.sni) endsWith "redtube.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "youporn.com"
+  expr: string(tls?.req?.sni) endsWith "youporn.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "tube8.com"
+  expr: string(tls?.req?.sni) endsWith "tube8.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "xnxx.com"
+  expr: string(tls?.req?.sni) endsWith "xnxx.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "youjizz.com"
+  expr: string(tls?.req?.sni) endsWith "youjizz.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "spankbang.com"
+  expr: string(tls?.req?.sni) endsWith "spankbang.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "drtuber.com"
+  expr: string(tls?.req?.sni) endsWith "drtuber.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "hardsextube.com"
+  expr: string(tls?.req?.sni) endsWith "hardsextube.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "porn.com"
+  expr: string(tls?.req?.sni) endsWith "porn.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "beeg.com"
+  expr: string(tls?.req?.sni) endsWith "beeg.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "4tube.com"
+  expr: string(tls?.req?.sni) endsWith "4tube.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "sex.com"
+  expr: string(tls?.req?.sni) endsWith "tnaflix.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "babes.com"
+  expr: string(tls?.req?.sni) endsWith "sex.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "javhub.net"
+  expr: string(tls?.req?.sni) endsWith "babes.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "shesfreaky.com"
+  expr: string(tls?.req?.sni) endsWith "javhub.net"
+
+- action: block
+  expr: string(tls?.req?.sni) endsWith "shesfreaky.com"
 
