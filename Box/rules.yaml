@@ -309,9 +309,6 @@
   expr: string(tls?.req?.sni) contains "4tube.com"
 
 - action: block
-  expr: string(tls?.req?.sni) contains "tnaflix.com"
-
-- action: block
   expr: string(tls?.req?.sni) contains "sex.com"
 
 - action: block
